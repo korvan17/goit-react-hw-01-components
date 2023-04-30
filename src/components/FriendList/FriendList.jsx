@@ -22,7 +22,7 @@ FriendList.propTypes = {
   friends: PropTypes.array.isRequired,
 };
 
-const FriendListItem = ({ avatar, name, isOnline, id }) => {
+const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <Item>
       {isOnline ? <StatusTrue /> : <StatusFalse />}

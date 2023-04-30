@@ -32,7 +32,7 @@ export const NameOfColumn = styled.th`
   text-transform: uppercase;
   font-size: 16px;
   background-color: ${props => props.theme.colors.NameOfColumn};
-  color: var(--global-white-color);
+  color: ${props => props.theme.colors.white};
   position: relative;
   ${tableBorder};
 `;
@@ -41,7 +41,7 @@ export const BodyOfSheet = styled.tbody``;
 
 export const Cell = styled.td`
   height: 40px;
-  border: 1px solid var(--global-white-color);
+  border: 1px solid ${props => props.theme.colors.white};
   text-align: center;
   position: relative;
   ${tableBorder};

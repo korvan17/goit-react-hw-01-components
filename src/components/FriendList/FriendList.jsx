@@ -18,9 +18,13 @@ export const FriendList = ({ friends }) => {
   );
 };
 
+FriendList.propTypes = {
+  friends: PropTypes.array.isRequired,
+};
+
 const FriendListItem = ({ avatar, name, isOnline, id }) => {
   return (
-    <Item key={id}>
+    <Item>
       {isOnline ? <StatusTrue /> : <StatusFalse />}
       <Avatar src={avatar} alt="User avatar" width="48" />
       <Name>{name}</Name>

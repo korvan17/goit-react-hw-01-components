@@ -11,6 +11,7 @@ export const StatisticsBlock = styled.section`
   overflow: hidden;
   border-radius: 5px;
   box-shadow: ${props => props.theme.colors.boxShadow} 0px 22px 70px 4px;
+  background: ${props => props.theme.colors.white};
   margin-bottom: 100px;
 `;
 
